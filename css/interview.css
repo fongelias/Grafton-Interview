@@ -1,0 +1,12 @@
+/* READ ME */
+/*
+This file is used for site-wide CSS, namely REUSABLE components, styles,
+helper classes, and states.
+*/
+
+/*--- Fonts ---*/
+	/*--- Sans-serif ---*/
+	@font-face {
+		font-family:  'OpenSans-Regular';
+		src: url('../fonts/Open_Sans_WOFF/OpenSans-Regular.WOFF') format('WOFF');
+	}

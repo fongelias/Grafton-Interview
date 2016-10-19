@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+    <!--########## LIBRARIES ##########-->
+    <!-- jQuery Library -->
+    <script src="/lib/jquery.min.3.1.0/jquery.min.3.1.0.js"></script>
+    <!-- jQuery-UI Library and Touch Punch -->
+    <script src="/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+    <script src="/lib/jquery.ui.touch-punch/jquery.ui.touch-punch.min.js"></script>
+    <!--########## CUSTOM ##########-->
+    <!-- Styles -->
+    <link rel="stylesheet" ng-href="css/normalize.css"></link>
+    <link rel="stylesheet" ng-href="css/interview.css"></link>
+    <!-- Scripts -->
+    <title></title>
+	</head>
+	<body>
+		Hello World
+        <script>
+            $.ajax({
+                url: 'http://lukepeters.me/api/adventure-options/',
+                dataType: 'text',
+                type: 'get',
+                contentType: 'application/x-www-form-urlencoded',
+                success: function(data) {
+                    console.log(data)
+                },
+                error: function(jqXhr, textStatus, errorThrown) {
+                    console.log(textStatus);
+                    console.log(errorThrown)
+                }
+            });
+         </script>
+	</body>
+</html>
