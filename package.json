@@ -1,0 +1,31 @@
+{
+  "name": "interview_test",
+  "version": "1.0.0",
+  "description": "sample website for grafton studios interview",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fongelias/Grafton-Interview.git"
+  },
+  "keywords": [
+    "Front-End",
+    "Interview",
+    "Grafton",
+    "Studios"
+  ],
+  "author": "Elias Fong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fongelias/Grafton-Interview/issues"
+  },
+  "homepage": "https://github.com/fongelias/Grafton-Interview#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^2.0.0",
+    "gulp-useref": "^3.1.2",
+    "run-sequence": "^1.2.2"
+  }
+}
