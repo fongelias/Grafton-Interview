@@ -1,0 +1,86 @@
+/* READ ME */
+/*
+This file is used for page-specific CSS, namely NON-REUSABLE components, styles,
+ and states.
+*/
+
+/*--- Header ---*/
+#header-container {
+	position: absolute;
+	width: 100%;
+}
+
+#header-container .inner-container {
+	padding: 2.2rem 3rem 0rem 3rem;
+}
+
+#header-container .image-container img {
+	height: 3.978rem;
+	width: 3.913rem;
+}
+
+#header-container nav {
+	width: 38.2rem;
+}
+
+#header-container nav a {
+	font-family: 'OpenSans-Semibold', 'Sans-serif';
+	font-size: 13px;
+	text-decoration: none;
+	margin: 0rem;
+}
+
+#header-container nav a:hover {
+	color: #d7d7d7;
+}
+
+/*--- Title Card Container ---*/
+#title-card-container {
+	height: calc(50rem - 14.5rem - 15rem);
+	width: 100%;
+	background: gray;
+	padding: 14.5rem 0rem 15rem 0rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background: url("../img/harbor_background.jpg");
+}
+
+#intro-card-container .inner-container {
+	vertical-align: middle;
+}
+
+/*--- Adventure Card Container ---*/
+#adventure-card-container {
+	height: 39.7rem;
+	padding: 0.4rem 0rem 0.4rem 0rem;
+}
+
+.card {
+	height: 39.7rem;
+	width: calc((100% - (0.4rem * 2)) / 3);
+	max-width: 39.8rem;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+.card:hover{
+	opacity: 0.8;
+	/*animation*/
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+	.card .inner-container {
+		height: 2.5rem;
+		padding-top: calc(84.5rem - 50.4rem);
+		padding-bottom: calc(39.7rem - (84.5rem - 50.4rem + 2.5rem));
+	}
+
+
+
+

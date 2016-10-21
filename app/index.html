@@ -5,34 +5,61 @@
         <title></title>
         <!--########## LIBRARIES ##########-->
         <!-- jQuery Library -->
-        <script src="/lib/jquery.min.3.1.0/jquery.min.3.1.0.js"></script>
+        <script src="./lib/jquery.min.3.1.0/jquery.min.3.1.0.js"></script>
         <!-- jQuery-UI Library and Touch Punch -->
-        <script src="/lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-        <script src="/lib/jquery.ui.touch-punch/jquery.ui.touch-punch.min.js"></script>
+        <script src="./lib/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+        <script src="./lib/jquery.ui.touch-punch/jquery.ui.touch-punch.min.js"></script>
         <!--########## CUSTOM ##########-->
         <!-- Styles -->
         <!-- build:css css/interview-all.min.css -->
-        <link rel="stylesheet" ng-href="css/normalize.css"></link>
-        <link rel="stylesheet" ng-href="css/interview.css"></link>
+        <link rel="stylesheet" href="./css/normalize.css"></link>
+        <link rel="stylesheet" href="./css/interview.css"></link>
+        <link rel="stylesheet" href="./css/interview-front-page.css"></link>
         <!-- endbuild -->
         <!-- Scripts -->
+        <script src="./js/interview.js"></script>
 	</head>
 	<body>
-		Hello World
-        <script>
-            $.ajax({
-                url: 'http://lukepeters.me/api/adventure-options/',
-                dataType: 'text',
-                type: 'get',
-                contentType: 'application/x-www-form-urlencoded',
-                success: function(data) {
-                    console.log(data)
-                },
-                error: function(jqXhr, textStatus, errorThrown) {
-                    console.log(textStatus);
-                    console.log(errorThrown)
-                }
-            });
-         </script>
+        <div id="wrapper">
+            <header id="header-container">
+                <div class="inner-container flex split">
+                    <div class="image-container">
+                        <object type="image/svg+xml"  id="nav-logo" data="./img/page_logo.svg">
+                            <img src="./img/page_logo.png" alt="R-logo">
+                        </object>
+                    </div>
+                    <nav class="flex split align-center">
+                        <a href="javascript:void(0)" class="text white">Speakers</a>
+                        <a href="javascript:void(0)" class="text white">Schedule</a>
+                        <a href="javascript:void(0)" class="text white">Workshops</a>
+                        <a href="javascript:void(0)" class="fill-button orange"><span>Contact</span></a>
+                    </nav>
+                </div>
+            </header>
+    		<section id="title-card-container">
+                <div class="inner-container">
+                    <h1 class="text center white">HUGE AND POWERFUL STATEMENT</h1>
+                </div>
+            </section>
+            <section id="adventure-card-container">
+                <div class="inner-container flex split">
+                    <a class="card card-1">
+                        <div class="inner-container">
+                            <h3 class="text center">Text</h3>
+                        </div>
+                    </a>
+                    <a class="card card-2">
+                        <div class="inner-container">
+                            <h3 class="text center"></h3>
+                        </div>
+                    </a>
+                    <a class="card card-3">
+                        <div class="inner-container">
+                        <h3 class="text center"></h3>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
 	</body>
 </html>

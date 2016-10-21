@@ -10,3 +10,92 @@ helper classes, and states.
 		font-family:  'OpenSans-Regular';
 		src: url('../fonts/Open_Sans_WOFF/OpenSans-Regular.WOFF') format('WOFF');
 	}
+
+	@font-face {
+		font-family:  'OpenSans-ExtraBold';
+		src: url('../fonts/Open_Sans_WOFF/OpenSans-ExtraBold.WOFF') format('WOFF');
+	}
+
+	@font-face {
+		font-family:  'OpenSans-Semibold';
+		src: url('../fonts/Open_Sans_WOFF/OpenSans-Semibold.WOFF') format('WOFF');
+	}
+
+/*--- Wrapper ---*/
+#wrapper {
+	min-width: 500px;
+}
+
+/*--- Text Elements ---*/
+h1 {
+	font-family: 'OpenSans-ExtraBold', 'Sans-serif';
+	font-size: 72px;
+	margin: 0rem;
+}
+
+h3 {
+	font-family: 'OpenSans-Semibold', 'Sans-serif';
+	font-size: 22px;
+	margin: 0rem;
+}
+
+
+/*--- Text Helper Classes ---*/
+/* Separated to prevent future overwriting of elements*/
+	/*--- Alignment ---*/
+	.text.center {
+		text-align: center;
+	}
+
+	/*--- Colors ---*/
+	.text.white {
+		color: #FFFFFF;
+	}
+
+/*--- FlexBox Helper Classes ---*/
+.flex {
+	display: flex;
+	flex-direction: row;
+	align-items: flex-start;
+}
+	
+	/* Alignment Options*/
+	.flex.align-center {
+		align-items: center;
+	}
+	
+	/* Justify Options*/
+	.flex.split {
+		justify-content: space-between;
+	}
+
+/*--- Buttons ---*/
+.fill-button {
+	cursor: pointer;
+	height: 3.5rem;
+	display: inline-block;
+	line-height: 3.5rem;
+	border-radius: 2.5rem;
+	padding-left: calc((10.1rem - 4.863rem) / 2);
+	padding-right: calc((10.1rem - 4.863rem) / 2);
+	/*animation*/
+	transition: all 0.4s;
+	-webkit-transition: all 0.4s;
+	-moz-transition: all 0.4s;
+}
+
+	/*--- Color Options ---*/
+	.fill-button.orange {
+		background-color: #F9692D;
+		color: #FFFFFF;
+	}
+	.fill-button.orange:hover {
+		background-color: #f7804f;
+		color: #FFFFFF;
+	}
+
+
+
+
+
+
